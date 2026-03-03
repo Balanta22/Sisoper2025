@@ -101,7 +101,7 @@ void free_block(int pid) {
 int main() {
 
     // prueba first fit
-    printf("=== FIRST FIT ===\n");
+    printf("[FIRST FIT]\n");
     initialize_memory();
     first_fit(1, 200);
     first_fit(2, 300);
@@ -111,7 +111,7 @@ int main() {
     print_memory();
 
     // prueba best fit
-    printf("\n=== BEST FIT ===\n");
+    printf("\n[BEST FIT]\n");
     initialize_memory();
     best_fit(1, 200);
     best_fit(2, 300);
@@ -121,7 +121,7 @@ int main() {
     print_memory();
 
     // prueba worst fit
-    printf("\n=== WORST FIT ===\n");
+    printf("\n[WORST FIT]\n");
     initialize_memory();
     worst_fit(1, 200);
     worst_fit(2, 300);
